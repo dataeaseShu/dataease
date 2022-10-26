@@ -14,12 +14,10 @@ jobs:
       - name: Install ESLint
         run: |
           cd ./frontend
-
-      - name: Install ESLint
-        run: |
           npm install
+
       - name: Run ESLint
         run: npx eslint .
           --config .eslintrc.js
-          --ext .js,.vue
+          --ext .js,.vue ./frontend/src
         continue-on-error: false
