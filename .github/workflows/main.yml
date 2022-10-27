@@ -17,7 +17,7 @@ jobs:
           npm install
 
       - name: Run ESLint
-        run: npx eslint .
-          --config ./frontend/.eslintrc.js
-          --ext .js,.vue ./frontend/src
+        run: |
+          cd ./frontend
+          eslint --ext .js,.vue
         continue-on-error: false
