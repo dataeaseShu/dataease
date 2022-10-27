@@ -12,17 +12,7 @@
     "dll": "webpack -p --progress --config ./webpack.dll.conf.js",
     "preview": "node build/index.js --preview",
     "lint": "eslint --ext .js,.vue src --fix",
-    "lint-staged": "lint-staged",
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "eslint --ext .js",
-    "src/**/*.vue": "eslint --ext .vue"
   },
   "dependencies": {
     "@antv/g2plot": "^2.4.9",

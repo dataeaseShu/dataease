@@ -11,7 +11,7 @@
 
 <script>
 import PluginCom from '@/views/system/plugin/PluginCom'
-
+let a = 1
 export default {
   name: 'App',
   components: { PluginCom },
