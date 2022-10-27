@@ -18,6 +18,6 @@ jobs:
 
       - name: Run ESLint
         run: npx eslint .
-          --config .eslintrc.js
+          --config ./frontend/.eslintrc.js
           --ext .js,.vue ./frontend/src
         continue-on-error: false
