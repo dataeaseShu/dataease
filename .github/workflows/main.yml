@@ -20,5 +20,5 @@ jobs:
         run: |
           cd ./frontend
           ls
-          npx eslint --ext .js,.vue
+          npx eslint --ext .js,.vue src
         continue-on-error: false
