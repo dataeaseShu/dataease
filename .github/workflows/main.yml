@@ -19,5 +19,6 @@ jobs:
       - name: Run ESLint
         run: |
           cd ./frontend
-          eslint --ext .js,.vue
+          ls
+          npx eslint --ext .js,.vue
         continue-on-error: false
