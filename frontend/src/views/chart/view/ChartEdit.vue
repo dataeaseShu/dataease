@@ -1172,6 +1172,7 @@
       <el-form
         ref="itemForm"
         label-width="80px"
+        @submit.native.prevent
         :model="itemForm"
         :rules="itemFormRules"
       >
